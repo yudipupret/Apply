@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Job Application Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Join Yuwasoft</h1>
+    <p>Unlock your infinite potential at Yuwasoft!</p>
+    <form id="application-form">
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender *</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+          <input type="radio" id="others" name="gender" value="others" required>
+          <label for="others">Others</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact *</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address *</label>
+        <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="apply-for">Apply for *</label>
+        <select id="apply-for" name="apply-for" required>
+          <option value="job">Job</option>
+          <option value="internship">Internship</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="position">Position *</label>
+        <input type="text" id="position" name="position" placeholder="Enter the position" required>
+      </div>
+      <div class="form-group">
+        <label for="cv">Upload CV *</label>
+        <input type="file" id="cv" name="cv" accept=".jpg, .png, .pdf" required>
+      </div>
+      <button type="submit">Apply</button>
+    </form>
+    <p class="note">* We will never share your email with anyone</p>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

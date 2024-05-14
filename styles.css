@@ -1,0 +1,108 @@
+/* Custom Fonts */
+
+@font-face {
+    font-family: 'LeagueSpartan-VariableFont_wght';
+    src: url('fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+  }
+
+@font-face {
+  font-family: 'ARPDisplay-80';
+  src: url('fonts/ARPDisplay-80.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ARPDisplay-150';
+  src: url('fonts/ARPDisplay-150.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+  font-family: 'ARPDisplay-80', Arial, sans-serif; /* Fallback to Arial if ARPDisplay-80 is not available */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'ARPDisplay-80', Arial, sans-serif; /* Fallback to Arial if ARPDisplay-80 is not available */
+  color: #333;
+}
+
+p {
+  font-family: 'ARPDisplay-80', Arial, sans-serif; /* Fallback to Arial if ARPDisplay-80 is not available */
+  color: #666;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    font-family: 'LeagueSpartan-VariableFont_wght', Arial, sans-serif; /* Fallback to Arial if LeagueSpartan-VariableFont_wght is not available */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="file"] {
+  width: auto;
+}
+
+/* Button Styles */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Note Styles */
+.note {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
